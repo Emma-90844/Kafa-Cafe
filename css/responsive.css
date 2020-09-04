@@ -330,4 +330,12 @@
 	.offer-item div h3{
 		font-size: 16px;
 	}
+	@media (max-width: 480px) {
+		.banner {
+			background: url(../images/foods/jointed4.jfif);
+			background-size: cover;
+            border-image-repeat: no-repeat;
+
+		}
+	}
 }

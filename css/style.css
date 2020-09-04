@@ -1,39 +1,4 @@
-/*------------------------------------------------------------------
-    File Name: style.css
-    Template Name: Landigoo
-    Created By: MelodyThemes
-    Envato Profile: http://themeforest.net/user/melodythemes
-    Website: https://melodythemes.com
-    Version: 1.0
--------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-    [Table of contents]
-	
-	1. IMPORT FONTS
-    2. IMPORT FILES
-	3. SKELETON
-	  1.1. Preloader
-	  1.2. Scrollup
-	4. HEADER AREA
-	5. BANNER AREA
-	6. ABOUT AREA
-	7. SPECIAL-MENU AREA
-	8. MENU AREA
-	8. TEAM AREA
-	9. GALLERY AREA
-	10. BLOG AREA
-	11. PRICING AREA
-	12. RESERVATIONS AREA
-	13. FOOTER AREA
-	14. COPYRIGHT AREA
-	15. COLOR SWITCHER AREA
-	
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-    IMPORT FONTS
--------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Paprika');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
@@ -278,8 +243,8 @@ html, body{ height: 100%; }
     padding: 15px 0 15px;
     display: inline-block;
     line-height: normal;
-    font-size: 100%;
-    height: 100%;
+    /* font-size: 100%;
+    height: 100%; */
 }
 .main-menu .navbar-default{
 	background-color:transparent;
@@ -613,7 +578,14 @@ html, body{ height: 100%; }
 .pad-bottom-100{
 	padding-bottom: 90px;
 }
-
+.order-input{
+    /* color: white; */
+    /* border-color: white; */
+    
+    background: transparent;
+    border: none;
+    max-width:70px
+}
 .pad-top-70{
 	padding-top: 70px;
 }
@@ -876,8 +848,8 @@ html, body{ height: 100%; }
     right: 15px;
     top: 50%;
     display: block;
-    width: 92px;
-    height: 92px;
+    width: 130px;
+    height: 120px;
     line-height: 92px;
     -moz-border-radius: 92px;
     -webkit-border-radius: 92px;
@@ -1467,6 +1439,21 @@ html, body{ height: 100%; }
 	min-height: 53px;
 }
 
+.order-box{
+    margin-bottom:20px;
+	min-height: 53px; 
+}
+.order-box input{
+    width:100%;
+	border:2px dotted #ccc;
+	background:#f5f5f5;
+	color:#202020;
+	padding:12px;
+	text-transform:capitalize;
+	border-radius: 4px;
+	opacity: 1;
+	min-height:54px; 
+}
 .form-box input{
 	width:100%;
 	border:2px dotted #ccc;
@@ -1493,9 +1480,27 @@ html, body{ height: 100%; }
     -o-appearance: none;
     appearance: none;
 }
+.order-box select{
+    width:100%;
+	border:2px dotted #ccc;
+	background:#f5f5f5;
+	color:#202020;
+	padding: 12px;
+	text-transform:capitalize;
+	border-radius: 4px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; 
+}
 .form-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width:100%;
 }
+.order-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width:100%;
+}
+
 .form-box .bootstrap-select button{
 	width:100%;
 	border:2px dotted #ccc;
@@ -1511,12 +1516,33 @@ html, body{ height: 100%; }
     appearance: none;
 }
 
+.order-box .bootstrap-select button{
+	width:100%;
+	border:2px dotted #ccc;
+	background:#f5f5f5;
+	color:#202020 !important;
+	padding: 15px;
+	text-transform:capitalize;
+	border-radius: 4px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
 .form-box select option{
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 5px;
 }
+.order-box select option{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+
 
 ::-webkit-input-placeholder { /* Chrome */
   color:#202020;
