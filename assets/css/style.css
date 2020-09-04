@@ -29,6 +29,7 @@
     font-style: normal;
 }
 
+
 body{
 	color:#686868;
 	font-size:14px;
@@ -192,7 +193,7 @@ html, body{ height: 100%; }
      position: absolute;
      left: 50%;
      top: 50%;
-     background-image: url(../images/loader-animation.gif);
+     background-image: url(./assets/images/loader-animation.gif);
      background-repeat: no-repeat;
      background-position: center;
      margin: -100px 0 0 -100px;
