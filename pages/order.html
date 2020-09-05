@@ -130,6 +130,7 @@
                       id="foodName"
                       readonly
                       data-error="Name of the food is required."
+                      required
                     />
                   </div>
                 </div>
@@ -143,7 +144,7 @@
                       class="price"
                       id="price"
                       readonly
-                      data-error="Price is required"
+                      required
                     />
                   </div>
                 </div>
@@ -152,11 +153,12 @@
                   <div class="order-box">
                     <label>Contact Number</label>
                     <input
-                      type="text"
+                      type="number"
                       name="phoneNumber"
                       class="phoneNumber"
                       id="phoneNumber"
                       placeholder=""
+                    
                     />
                   </div>
                 </div>
@@ -171,6 +173,7 @@
                       id="deliveryAddress"
                       class="deliveryAddress"
                       placeholder=""
+                      required="required"
                     />
                   </div>
                 </div>
@@ -178,15 +181,16 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                   <div class="order-box">
                     <label>Chose Quantity</label>
-                    <select name="quantity" id="quantity" class="">
+                    <select name="quantity" id="quantity" class="" required>
                       <option selected disabled>0</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
                       <option>5</option>
-                      <option>6</option>
+                      <option>6</option>  
                     </select>
+                  
                   </div>
                 </div>
                 <!-- end col -->
@@ -199,6 +203,7 @@
                       id="fullName"
                       class="fullName"
                       placeholder=""
+                      required
                     />
                   </div>
                 </div>
@@ -213,6 +218,7 @@
                       id="email"
                       class="email"
                       placeholder=""
+                      required
                     />
                   </div>
                 </div>
@@ -220,7 +226,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                   <div class="order-box">
                     <label>Ocassion</label>
-                    <select name="ocassion" id="ocassion" class="ocassion">
+                    <select name="ocassion" id="ocassion" class="ocassion" required>
                       <option selected disabled></option>
                       <option>Wedding</option>
                       <option>Birthday</option>
@@ -452,7 +458,8 @@
        document.getElementById('delieveryAddress').value = '';
        document.getElementById('quantity').value = '';
        document.getElementById('email').value = '';
-       document.getElementById('occassion').value = '';
+       document.getElementById('ocassion').value = '';
+       document.getElementById('fullName').value = '';
      }
    </script>
   </body>
