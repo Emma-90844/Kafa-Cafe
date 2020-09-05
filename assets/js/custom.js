@@ -303,3 +303,13 @@
 
 
 })(jQuery);
+
+function getQueryStringValue(name){
+	var params = new URLSearchParams(window.location.search.substring(1));
+	return params.get(name);
+}
+
+function fetchParams(){
+	document.getElementById('price').value = getQueryStringValue('price');
+	document.getElementById('foodName').value = getQueryStringValue('foodName');
+}
